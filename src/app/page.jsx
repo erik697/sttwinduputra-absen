@@ -33,9 +33,10 @@ export default function Page() {
  
   return (
     <div className='w-full h-screen'>
+        <div id='reader' className=""></div>
         {scanResult ? <div className="">Success <a href={scanResult}>{scanResult}</a></div>
         :
-<div id='reader' className=""></div>
+<div className=""></div>
 
         }
         
