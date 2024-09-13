@@ -21,9 +21,9 @@ export default function Page() {
     
         scanner.render(success, error);
     
-        function success(result){
-            scanner.clear();
+        async function success(result){
             setScanResult(result)
+            await scanner.clear();
         }
     
         function error(err){
